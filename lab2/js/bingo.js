@@ -53,6 +53,12 @@ import Card from "./card.js";
     // let card = new Card(this.cards[i]);
     // render the card
     //card.render();
+    for (let i = 0; i < this.cards.length; i++) {
+        // console.log(this.cards[i]);
+      let card = new Card(this.cards[i]);
+      card.render(i);
+    }
+
   }
 
   static checkWinner() {
