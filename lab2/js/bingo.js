@@ -74,7 +74,10 @@ import Card from "./card.js";
     // }
 
     //let cardsDone = document.querySelector(".bingo__card--done");
-    
+    let cardsDone = document.querySelectorAll(".bingo__card--done");
+    if (cardsDone.length === 5) {
+      document.querySelector(".bingo__overlay").style.display = "block";
+    }
   }
 
   static save() {
