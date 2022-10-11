@@ -42,6 +42,9 @@ export default class Card {
       // call checkWinner() on the Bingo class
       // try to call the save() method on the Bingo class
        
+      this.markDone(e.target);
+      Bingo.checkWinner();
+      Bingo.save();
       //console.log("clicked");
     });
   }
